@@ -1,0 +1,8 @@
+---
+
+- name: install nodejs and npm
+  yum: name={{item}} state={{nodejs_pkg_state}}
+  with_items:
+    - nodejs
+    - npm
+
